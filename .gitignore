@@ -1,0 +1,56 @@
+# Ignore le dossier target (fichiers de build)
+target/
+out/
+*.jar
+*.war
+*.ear
+
+# Ignorer les fichiers générés par Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Ignore les fichiers de logs
+logs/
+*.log
+*.log.*
+hs_err_pid*
+!src/main/resources/logs/ # (Si tu veux garder un dossier logs vide)
+
+# Ignore les fichiers spécifiques à Eclipse
+.settings/
+.project
+.classpath
+
+# Ignore les fichiers spécifiques à IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Ignore les fichiers spécifiques à VS Code
+.vscode/
+
+# Ignore les fichiers liés au système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Ignore les fichiers de test coverage
+coverage/
+jacoco.exec
+jacoco-report/
+
+# Ignore Docker et Kubernetes
+docker-compose.override.yml
+*.dockerfile
+*.kubeconfig
+
+# Ignore les variables d’environnement sensibles (si utilisées)
+.env
+*.env.local
